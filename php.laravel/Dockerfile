@@ -12,6 +12,7 @@ RUN apt-get update \
   && apt-get install -y --no-install-recommends \
     nano-tiny \
     git \
+    libpng-dev \
     zlib1g-dev \
     libmemcached-dev \
 
