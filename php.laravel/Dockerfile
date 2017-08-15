@@ -21,6 +21,7 @@ RUN apt-get update \
   && docker-php-ext-install zip pdo_mysql \
   && docker-php-ext-enable memcached \
   && docker-php-ext-enable igbinary \
+  && docker-php-ext-enable opcache \
 
   # Composer
   && php -r "copy('https://getcomposer.org/installer', 'composer-setup.php');" \
